@@ -1,0 +1,305 @@
+:root{
+    --gradient:linear-gradient(90deg,rgb(244, 157, 229),rgb(244, 157, 229));
+}
+
+
+
+*{
+    font-family:sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition:all .2s linear ;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body{
+    background:white;
+
+}
+section{
+    padding: 0 7%;
+}
+
+
+.navbar .btn:hover{
+    background: rgb(244, 157, 229) ;
+    color: white;
+}
+.div.block-header{
+    color: black;
+    font: 14px ;
+}
+
+.btn{
+    padding: .6rem 3rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    background: var(--gradient);
+    color: white;
+}
+
+.btn:hover{
+    background: grey;
+    color: black;
+}
+
+header{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    background: var(--gradient);
+    z-index: 1000;
+    padding:2rem 7%;
+ }
+
+ header .logo{
+    font-size:3rem;
+    color:white;
+}
+
+ header .dropdown ul{
+
+    display:inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+ }
+
+
+ header .dropdown ul li a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    position: relative;
+ }
+ 
+ header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+ }
+ 
+ header .navbar ul li a{
+     font-size: 2rem;
+     margin-left: 2rem;
+     color: #fff;
+     position: relative;
+     
+ }
+
+ header .navbar ul li a .fa-solid fa-cart-shopping{
+    font-size:3rem;
+    margin-left: 2rem;
+
+ }
+
+ header .navbar ul li a::before{
+    content: '';
+    position: absolute;
+    bottom:-.5rem;
+    right:0;
+    height: .2rem;
+    width:0%;
+    background: #fff;
+    transition: .2s linear;
+}
+
+header .navbar ul li a:active::before,
+header .navbar ul li a:hover::before{
+    left:0;
+    width:100%;
+}
+
+
+header #menu{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+}
+
+.contact form{
+    flex:1 1 40rem;
+    background: white;
+    padding:3rem;
+    box-shadow:rgba(151, 144, 144, 0.863);
+}
+
+.contact form .box{
+    height:5rem;
+    width:100%;
+    background:none;
+    border:none;
+    border-bottom: .1rem solid rgba(151, 144, 144, 0.863);
+    font-size: 2rem;
+    margin:1rem 0;
+    color:black;
+    text-transform: none;
+}
+
+.contact form textarea{
+    height:15rem;
+    width:100%;
+    background:none;
+    border:none;
+    border-bottom: .1rem solid whitesmoke;
+    font-size: 2rem;
+    margin:1rem 0;
+    color:black;
+    text-transform: none;
+    resize: none;
+}
+
+.contact form .box::placeholder, .contact form textarea::placeholder{
+    text-transform: none;
+}
+
+.contact form .box:focus, .contact form textarea:focus{
+    border-color: #e4e7f0;
+}
+
+.contact form .btn{
+    width:100%;
+}
+
+.contact .content{
+    flex:1 1 40rem;
+    padding:4rem;
+}
+
+.contact .content h3{
+    font-size: 4rem;
+    color: black;
+}
+
+.contact .content p{
+    font-size: 1.4rem;
+    color:black;
+    padding:1rem 0;
+}
+
+.contact .content .icons{
+    display: flex;
+    align-items: center;
+}
+
+.contact .content .icons p{
+    font-size: 2rem;
+    color: black;
+}
+
+.contact .content .icons i{
+    font-size: 2rem;
+    color:#637CBB;
+    padding-right: 1rem;
+}
+
+.footer{
+    background: rgb(244, 157, 229);
+    text-align: center;
+}
+
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.footer .share a{
+    font-size: 3rem;
+    color:black;
+    margin:3rem 1.4rem;
+}
+
+.footer .share a:hover{
+    color:white;
+}
+
+.footer .credit{
+    padding:2rem 1rem;
+    color:#fff;
+    background: rgb(244, 157, 229);
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 9rem;
+}
+
+.footer .credit a{
+    color:#637CBB;
+}
+
+@media(max-width:768px){
+    .contact .content{
+        padding:3rem 0;
+    }
+}
